@@ -1,257 +1,166 @@
-# Awesome-Code-Review-Automation-Devsecops
-
-## Top Code Review Automation & DevSecOps Ecosystem
-
-
-
-**Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
-
-*Focused on AI Pull Request Reviewers, Automated Code Review Workflows, DevSecOps PR Gates & Self-Hosted Review Bots*  
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS/hosted platforms** and **open-source projects** for **Code Review Automation & DevSecOps**. These tools analyze, summarize, review, test, secure, and automate pull requests and merge requests across GitHub, GitLab, Bitbucket, and Gitea using AI code-review agents, AST/diff analyzers, SAST/SCA security gates, and declarative PR routing workflows.
-
-
-
-**Examples** include CodeRabbit, Qodo (formerly CodiumAI), Reviewpad, PullRequest, Graphite, Bito, What-The-Diff, Snyk Pull Request, Codacy, SonarQube PR Analysis, and alibaba/open-code-review (the category leaders and popular runtimes). 
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosted AI pull-request review bots (`alibaba/open-code-review`, `Qodo PR-Agent`, `CodeReviewBot`, `Reviewdog`), deterministic PR workflow automation (`Reviewpad`, `Danger`, `Mergify-style open alternatives`), and DevSecOps security gates (`Semgrep`, `Trivy`, `Gitleaks`, `SonarQube Community`) — ideal for engineering leads, DevSecOps engineers, open-source maintainers, and developers scaling high-velocity code reviews.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Support & Share](#support--share)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CodeRabbit](https://coderabbit.ai)**  
-
-  AI-powered code review platform delivering context-aware line-by-line PR reviews, sequence diagrams, automated summaries, and one-click fix suggestions across GitHub and GitLab.
-
-
-
-- **[Qodo Merge (formerly CodiumAI PR-Agent Pro)](https://qodo.ai)**  
-
-  Enterprise AI code integrity and pull-request review suite generating automated PR descriptions, test suites, security checks, and context-enriched code suggestions.
-
-
-
-- **[Graphite](https://graphite.dev)**  
-
-  Stacked pull-request workflow platform and AI code reviewer (`Graphite Agent`) engineered for rapid code review, merge queues, and high-velocity engineering teams.
-
-
-
-- **[Bito (AI Code Review Agent)](https://bito.ai)**  
-
-  Cloud AI code review agent providing deep codebase-aware PR feedback, security vulnerability detection, and custom style-guide enforcement inside GitHub, GitLab, and Bitbucket.
-
-
-
-- **[PullRequest (by HackerOne)](https://pullrequest.com)**  
-
-  Code review as a service combining automated static analysis with on-demand vetted human security and software engineers reviewing every pull request.
-
-
-
-- **[What The Diff](https://whatthediff.ai)**  
-
-  AI-powered pull request assistant that automatically writes clear PR descriptions, changelogs, and inline refactoring suggestions from Git diffs.
-
-
-
-- **[Snyk (Pull Request Checks)](https://snyk.io)**  
-
-  Developer-first DevSecOps platform running automated SAST, open-source dependency SCA, container, and IaC security checks directly on pull requests.
-
-
-
-- **[Codacy](https://codacy.com)**  
-
-  Automated code review and quality governance platform enforcing static analysis, complexity limits, duplication checks, and security gates on every PR.
-
-
-
-- **[SonarQube Cloud (PR Analysis)](https://sonarsource.com)**  
-
-  Cloud continuous code quality and security platform decorating pull requests with Clean-as-You-Code quality gates, bug reports, and taint-analysis findings.
-
-
-
-- **[Reviewpad Cloud](https://reviewpad.com)**  
-
-  Automated pull-request workflow platform enabling engineering teams to define custom reviewer assignment, auto-merge, and labeling policies as code.
-
-
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[alibaba/open-code-review](https://github.com)**  
-
-  Open-source AI-driven code review automation project from Alibaba engineered to analyze pull requests, detect defects, and deliver intelligent review feedback in developer workflows.
-
-
-
-- **[Qodo PR-Agent (`qodo-ai/pr-agent`)](https://github.com)**  
-
-  Flagship open-source AI pull-request reviewer and workflow assistant supporting GitHub, GitLab, Bitbucket, and Azure DevOps with `/review`, `/describe`, `/improve`, and `/ask` commands.
-
-
-
-- **[Reviewdog (`reviewdog/reviewdog`)](https://github.com)**  
-
-  Essential open-source automated code review tool written in Go that pipes output from any linter, SAST scanner, or compiler directly into inline pull-request review comments.
-
-
-
-- **[Reviewpad (`reviewpad/reviewpad`)](https://github.com)**  
-
-  Open-source pull-request workflow automation engine allowing teams to write declarative YAML/DSL rules for reviewer routing, PR size labeling, and security approvals.
-
-
-
-- **[Danger (`danger/danger` & `danger/danger-js`)](https://github.com)**  
-
-  Popular open-source CI companion that runs automated code-review chores during pull requests—enforcing changelog updates, test coverage rules, and PR hygiene checks.
-
-
-
-- **[AI Code Reviewer (`anc95/ChatGPT-CodeReview` & `mattzcarey/code-review-gpt`)](https://github.com)**  
-
-  Lightweight open-source GitHub Action and GitLab CI bots leveraging local or cloud LLMs to post automated line-by-line code review feedback on pull requests.
-
-
-
-- **[Semgrep (`semgrep/semgrep`)](https://github.com)**  
-
-  Fast, open-source AST-aware SAST engine ideal for DevSecOps PR gates, catching security anti-patterns and enforcing organization-specific code rules in seconds.
-
-
-
-- **[Trivy (`aquasecurity/trivy`)](https://github.com)**  
-
-  Comprehensive open-source DevSecOps scanner for pull requests checking container images, lockfile dependencies (SCA), Terraform/Kubernetes IaC, and misconfigurations.
-
-
-
-- **[Gitleaks (`gitleaks/gitleaks`)](https://github.com)**  
-
-  Fast open-source secret-scanning guardrail designed for CI/CD pull-request checks to block leaked API keys, tokens, and credentials before merge.
-
-
-
-- **[MegaLinter (`oxsecurity/megalinter`)](https://github.com)**  
-
-  All-in-one open-source CI/CD linter orchestrator bundling 50+ linters and formatters with automated PR comment reporting and autofix patches.
-
-
-
-- **[Gerrit (`GerritCodeReview/gerrit`)](https://github.com)**  
-
-  Battle-tested open-source web-based code review and project management system for Git repositories featuring granular patch-set diffs and CI verification gates.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Review Board (`reviewboard/reviewboard`)](https://github.com)** for a self-hosted open-source web-based code and document review platform supporting Git, Subversion, Mercurial, and Perforce.
-
-- **[GitHub Super-Linter (`super-linter/super-linter`)](https://github.com)** for a ready-to-use open-source multi-language linting GitHub Action enforcing consistent formatting and static checks on PRs.
-
-- **[OpenSSF Scorecard (`ossf/scorecard`)](https://github.com)** and **[OSV-Scanner (`google/osv-scanner`)](https://github.com)** for automated open-source supply-chain risk assessment and vulnerability scanning in PR workflows.
-
-- **[Difftastic (`Wilfred/difftastic`)](https://github.com)** for structural Tree-sitter AST diffing that makes complex code reviews dramatically easier to read.
-
-- **[Ollama (`ollama/ollama`)](https://github.com)** + **[Qodo PR-Agent](https://github.com)** for running 100% private, air-gapped AI pull-request reviews on self-hosted CI runners without sending proprietary code to external APIs.
-
-
-
-**Frameworks for building custom systems**: Combine **alibaba/open-code-review** or **Qodo PR-Agent** for AI semantic PR reviews, **Reviewdog + Semgrep + Gitleaks + Trivy** for automated DevSecOps security gates, and **Danger** or **Reviewpad** for deterministic PR routing and merge hygiene.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Support & Share
-
-
-
-If you find this curated list helpful, consider supporting the project:
-
-
-
-- ⭐ **Star this repository** to help others discover it.
-
-- 🍴 **Fork & Share** it with your team, friends, or community on X/Twitter, LinkedIn, and Reddit.
-
-- ☕ **Buy me a coffee / Sponsor** my open-source work on [GitHub Sponsors](https://github.com) — featuring tiers for profile badges, README shoutouts, logo placements, and prioritized bug fixes/features!
-
-
-
-[![Sponsor @ishandutta2007](https://shields.io)](https://github.com)
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- AI code review bots and automated DevSecOps scanners augment human engineering judgment but do not replace thorough human architecture, business-logic, and security reviews.
-
-- Self-hosted PR bots executing on public repositories must run with least-privilege `GITHUB_TOKEN` permissions (`pull-requests: write`, `contents: read`) to prevent prompt-injection or fork-PR privilege escalation attacks.
-
-
+<div align="center">
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Code Review Automation &amp; DevSecOps Banner" width="100%" />
+</p>
+
+# 🚀 Awesome Code Review Automation & DevSecOps Ecosystem 🛡️
+
+### *The definitive directory of AI Pull Request Reviewers, Automated Code Review Platforms, DevSecOps Security Gates, and Self-Hosted Review Bots*
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Review-Automation-Devsecops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Code-Review-Automation-Devsecops?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Review-Automation-Devsecops/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Code-Review-Automation-Devsecops?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Review-Automation-Devsecops/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+</div>
 
+## 📌 Table of Contents
 
-**Made for software engineers, DevSecOps teams, engineering managers, and open-source maintainers.**  
+- [🌐 Overview & SEO Keywords](#-overview--seo-keywords)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Best Practices & Framework Architecture](#️-best-practices--framework-architecture)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Support & Share](#-support--share)
+- [⚖️ Disclaimer](#️-disclaimer)
 
-Let's make code review automation and DevSecOps pull-request workflows more open, secure, and high-velocity.
+---
+
+## 🌐 Overview & SEO Keywords
+
+Welcome to the definitive, high-authority knowledge base for **Code Review Automation**, **AI-Powered Pull Request (PR) Reviews**, and **DevSecOps Shift-Left Security Workflows**. 
+
+As engineering teams scale software velocity with generative AI coding assistants, code generation speeds have outstripped human review capacity. This repository curates industry-standard **SaaS/hosted platforms** and **open-source developer tools** designed to:
+- 🤖 Automate inline, context-aware pull request and merge request reviews using LLMs (GPT-4o, Claude 3.5 Sonnet, DeepSeek, and local Ollama models).
+- 🛡️ Enforce automated **DevSecOps shift-left guardrails**, static application security testing (SAST), software composition analysis (SCA), secret scanning, and infrastructure-as-code (IaC) compliance.
+- ⚡ Orchestrate declarative PR workflows, stacked diffs, automated PR summaries, dynamic reviewer routing, and deterministic auto-merge policies across **GitHub**, **GitLab**, **Bitbucket**, and **Azure DevOps**.
+
+> **Target Search Queries & Keywords**: `code review automation`, `ai code review`, `devsecops pull request gates`, `automated pr reviewer`, `sast github action`, `secret scanning git diff`, `coderabbit alternatives`, `qodo pr-agent`, `semgrep code review`, `shift left security`, `llm code inspection`, `continuous code quality`.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **DevSecOps and Application Security Testing (AST)** market is valued at approximately **$8.9B – $11.4B** (growing at a 13%–22% CAGR), while the dedicated automated code review and inspection software segment commands an estimated **$4B+**.
+
+The sector exhibits a **hybrid structure: moderately concentrated at the platform layer with heavy fragmentation across specialized point solutions**:
+- **Platform Concentration:** Broad end-to-end enterprise contracts are anchored by major platform providers (such as GitHub, GitLab, Snyk, and SonarSource).
+- **Specialized Fragmentation:** The inline AI pull-request review, deterministic PR policy automation, and shift-left scanning niche remains **heavily fragmented**. Startups and open-source projects continually emerge with specialized models, AST parsers, and custom policy engines to protect developer velocity without vendor lock-in.
+
+---
+
+## 🏢 SaaS & Hosted Platforms
+
+The following table summarizes market-leading commercial and hosted SaaS platforms for AI code reviews, pull request intelligence, and DevSecOps quality gates.
+
+*Sorted descending by company size (Valuation / Estimated Revenue).*
+
+| 🏢 Platform | 💰 Company Size (Valuation / Revenue) | 💵 Starting Tier Pricing | 🎁 Free Tier / Trial Limits | 🔍 Core Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Snyk](https://snyk.io)** | **$7.4B** peak private valuation (~$300M+ ARR) | **$25** / contributing dev / month (Team plan) | **Free forever plan**: Up to 100 Snyk Code (SAST) tests/mo, 200 Snyk Open Source (SCA) tests/mo, 100 container tests/mo, capped at 5 projects. | Developer-first DevSecOps scanning code, open-source dependencies, containers, and IaC directly on pull requests. |
+| **[SonarQube Cloud](https://sonarsource.com)** | **$4.7B** private valuation (~$430M+ ARR) | **$34** / month (covers up to 100,000 Lines of Code) | **Free forever plan**: Unlimited analysis for public open-source repos; up to 50,000 Lines of Code (LOC) free for private repos. | Cloud continuous inspection enforcing Clean-as-You-Code quality gates, SAST taint analysis, and inline PR decoration. |
+| **[CodeRabbit](https://coderabbit.ai)** | **$1.5B** valuation (Series C, 2026) | **$24** / user / month (Essentials, billed annually) or $30 month-to-month | **Free forever plan**: $0 for open-source repositories; includes 14-day full Pro trial for private repos (no credit card required). | Context-aware line-by-line AI PR reviews, automated architectural diagrams, 1-click refactoring, and AST linter integration. |
+| **[Graphite](https://graphite.dev)** | **$290M** valuation (Series B; Acquired by Cursor) | **$20** / user / month (Starter plan, billed annually) | **Free forever Hobby plan**: $0 for individual personal repos; includes 30-day free trial of Team plan with full AI reviews. | Stacked pull request workflow platform featuring fast merge queues, CLI integration, and AI review agent feedback. |
+| **[Qodo Merge](https://qodo.ai)** *(formerly CodiumAI)* | **$120M** total funding (Series B, 2026) | **$30** / month (Team starter pool of 2,500 credits, ~$0.012/credit) | **14-day free trial**: Full enterprise feature access and up to 100 code reviews per day; free forever for qualified open-source projects. | Enterprise-grade AI PR review suite providing `/review`, `/describe`, automated test generation, and security checks. |
+| **[PullRequest](https://pullrequest.com)** *(by HackerOne)* | Part of HackerOne (**$1B+** valuation) | **$129** / dev / month (Team On-Demand); $9 / seat / mo for static analysis | **Free trial**: 14-day free trial on automated static checks; tailored pilot evaluations for on-demand human review. | Dual-engine review platform combining automated static analysis with vetted human security and software engineers on PRs. |
+| **[Codacy](https://codacy.com)** | **~$30M** venture funding (~$7.3M+ ARR) | **$15** / dev / month (Pro plan, billed annually) | **Free forever plan**: Unlimited free analysis for public open-source repos; 14-day free trial for private repos without credit card. | Automated code review and static analysis checking code complexity, test coverage thresholds, and security compliance. |
+| **[Bito](https://bito.ai)** | **~$10M** total seed & seed-extension funding | **$15** / seat / month (Team plan) or $12 / seat / mo billed annually | **Free forever plan**: $0 for individual developers with basic AI repo summaries and 100 code completions/month. | AI code review agent providing codebase-aware PR feedback, style-guide enforcement, and prompt-driven context inside Git. |
+| **[What The Diff](https://whatthediff.ai)** | Bootstrapped AI SaaS (~$500k ARR) | **$19** / month (Pro plan with 200,000 monthly tokens) | **Free forever plan**: 25,000 tokens per month (~10 pull request diff summaries per month) with unlimited repos. | Token-based AI pull request assistant that writes natural-language diff summaries, changelogs, and inline refactoring hints. |
+| **[Reviewpad Cloud](https://reviewpad.com)** | Seed-stage *(GitHub app in maintenance mode)* | **Contact maintainers** (Cloud tiers deprecated; OSS available) | **Free tier**: Free for open-source repositories via GitHub Marketplace app. | Pull request automation engine allowing engineering teams to define auto-merge, reviewer assignment, and PR size labeling as code. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The following curated open-source projects power self-hosted AI code reviews, DevSecOps CI/CD security gates, and PR automation.
+
+*Sorted descending by GitHub Star Count.*
+
+| 📦 Repository & Name | ⭐ GitHub Stars | 🏷️ Primary Category | 📝 Description |
+| :--- | :--- | :--- | :--- |
+| **[astral-sh/ruff](https://github.com/astral-sh/ruff)** | [![Stars](https://img.shields.io/github/stars/astral-sh/ruff?style=social&color=white)](https://github.com/astral-sh/ruff/stargazers) | ⚡ Fast Python Linter & Formatter | Extremely fast Python linter and code formatter written in Rust; replaces Flake8, Black, isort, and Bandit in CI/CD PR checks. |
+| **[aquasecurity/trivy](https://github.com/aquasecurity/trivy)** | [![Stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white)](https://github.com/aquasecurity/trivy/stargazers) | 🛡️ Container, IaC & SCA Scanner | Comprehensive open-source DevSecOps scanner for pull requests checking container images, lockfile dependencies, and Terraform/K8s misconfigurations. |
+| **[gitleaks/gitleaks](https://github.com/gitleaks/gitleaks)** | [![Stars](https://img.shields.io/github/stars/gitleaks/gitleaks?style=social&color=white)](https://github.com/gitleaks/gitleaks/stargazers) | 🔑 Secret Scanning Gate | Lightning-fast open-source secret-scanning guardrail designed for Git hooks and CI/CD PR checks to detect API keys, tokens, and credentials before merge. |
+| **[trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog)** | [![Stars](https://img.shields.io/github/stars/trufflesecurity/trufflehog?style=social&color=white)](https://github.com/trufflesecurity/trufflehog/stargazers) | 🔑 Deep Secret Scanner | Finds leaked credentials and sensitive secrets across Git commits, branches, and PR diffs with verified active credential checks. |
+| **[Wilfred/difftastic](https://github.com/Wilfred/difftastic)** | [![Stars](https://img.shields.io/github/stars/Wilfred/difftastic?style=social&color=white)](https://github.com/Wilfred/difftastic/stargazers) | 🌳 Structural Tree-sitter Diff | Structural AST diff tool that compares code syntax rather than line diffs, making complex code reviews drastically easier to understand. |
+| **[golangci/golangci-lint](https://github.com/golangci/golangci-lint)** | [![Stars](https://img.shields.io/github/stars/golangci/golangci-lint?style=social&color=white)](https://github.com/golangci/golangci-lint/stargazers) | 🐹 Go Linter Runner | Fast Go linters runner for CI/CD with parallel execution, caching, and GitHub Action pull request annotations. |
+| **[semgrep/semgrep](https://github.com/semgrep/semgrep)** | [![Stars](https://img.shields.io/github/stars/semgrep/semgrep?style=social&color=white)](https://github.com/semgrep/semgrep/stargazers) | 🔍 AST-Aware SAST Engine | Fast, open-source AST-aware SAST engine ideal for DevSecOps PR gates, catching security vulnerabilities and enforcing custom code rules. |
+| **[qodo-ai/pr-agent](https://github.com/qodo-ai/pr-agent)** | [![Stars](https://img.shields.io/github/stars/qodo-ai/pr-agent?style=social&color=white)](https://github.com/qodo-ai/pr-agent/stargazers) | 🤖 Open-Source AI Review Agent | Flagship open-source AI PR reviewer supporting GitHub, GitLab, and Bitbucket with `/review`, `/describe`, `/improve`, and `/ask` commands. |
+| **[facebook/infer](https://github.com/facebook/infer)** | [![Stars](https://img.shields.io/github/stars/facebook/infer?style=social&color=white)](https://github.com/facebook/infer/stargazers) | 🔬 Deep Static Analyzer | Static analyzer for Java, C, C++, and Objective-C that detects null pointer exceptions, memory leaks, and race conditions before merge. |
+| **[google/osv-scanner](https://github.com/google/osv-scanner)** | [![Stars](https://img.shields.io/github/stars/google/osv-scanner?style=social&color=white)](https://github.com/google/osv-scanner/stargazers) | 📦 Open Source SCA Scanner | Vulnerability scanner powered by the OSV database, providing automated dependency risk assessment in PR workflows. |
+| **[super-linter/super-linter](https://github.com/super-linter/super-linter)** | [![Stars](https://img.shields.io/github/stars/super-linter/super-linter?style=social&color=white)](https://github.com/super-linter/super-linter/stargazers) | 🧹 Multi-Language Linter Action | Ready-to-use open-source multi-language linting GitHub Action combining 40+ language linters into a single unified PR check. |
+| **[reviewdog/reviewdog](https://github.com/reviewdog/reviewdog)** | [![Stars](https://img.shields.io/github/stars/reviewdog/reviewdog?style=social&color=white)](https://github.com/reviewdog/reviewdog/stargazers) | 🐶 Automated Inline PR Annotator | Automated code review tool in Go that pipes output from any linter, SAST scanner, or compiler directly into inline PR comments. |
+| **[PyCQA/bandit](https://github.com/PyCQA/bandit)** | [![Stars](https://img.shields.io/github/stars/PyCQA/bandit?style=social&color=white)](https://github.com/PyCQA/bandit/stargazers) | 🐍 Python AST Security Scanner | Security-focused static analyzer for Python that parses AST trees to find common security issues (SQLi, shell injection, insecure crypto). |
+| **[ossf/scorecard](https://github.com/ossf/scorecard)** | [![Stars](https://img.shields.io/github/stars/ossf/scorecard?style=social&color=white)](https://github.com/ossf/scorecard/stargazers) | 🏅 Supply Chain Security Assessor | OpenSSF automated security tool evaluating repos against key supply-chain security criteria (branch protection, pinned dependencies, SAST). |
+| **[danger/danger](https://github.com/danger/danger)** | [![Stars](https://img.shields.io/github/stars/danger/danger?style=social&color=white)](https://github.com/danger/danger/stargazers) | 🚨 PR Hygiene & Rules Orchestrator | CI companion tool running automated code-review chores during PRs—enforcing changelog updates, test coverage rules, and PR metadata. |
+| **[danger/danger-js](https://github.com/danger/danger-js)** | [![Stars](https://img.shields.io/github/stars/danger/danger-js?style=social&color=white)](https://github.com/danger/danger-js/stargazers) | 🚨 JavaScript/TypeScript PR Hygiene | The JavaScript and TypeScript port of Danger for automating PR etiquette, commit linting, and team review conventions. |
+| **[anc95/ChatGPT-CodeReview](https://github.com/anc95/ChatGPT-CodeReview)** | [![Stars](https://img.shields.io/github/stars/anc95/ChatGPT-CodeReview?style=social&color=white)](https://github.com/anc95/ChatGPT-CodeReview/stargazers) | 🤖 Lightweight LLM PR Bot | Minimalist GitHub Action leveraging OpenAI APIs to post automated line-by-line review comments on PR diffs. |
+| **[oxsecurity/megalinter](https://github.com/oxsecurity/megalinter)** | [![Stars](https://img.shields.io/github/stars/oxsecurity/megalinter?style=social&color=white)](https://github.com/oxsecurity/megalinter/stargazers) | 🛠️ 50+ Linters Orchestrator | All-in-one open-source CI/CD linter orchestrator bundling 50+ linters and formatters with automated PR reporting and autofix patches. |
+| **[mattzcarey/code-review-gpt](https://github.com/mattzcarey/code-review-gpt)** | [![Stars](https://img.shields.io/github/stars/mattzcarey/code-review-gpt?style=social&color=white)](https://github.com/mattzcarey/code-review-gpt/stargazers) | 🤖 CLI & GitHub Action Reviewer | Open-source CLI and GitHub Action that reviews code changes locally or in CI using OpenAI, Claude, or local model endpoints. |
+| **[reviewboard/reviewboard](https://github.com/reviewboard/reviewboard)** | [![Stars](https://img.shields.io/github/stars/reviewboard/reviewboard?style=social&color=white)](https://github.com/reviewboard/reviewboard/stargazers) | 📋 Self-Hosted Code Review Server | Proven self-hosted web-based code and document review platform supporting Git, Subversion, Mercurial, and Perforce. |
+| **[GerritCodeReview/gerrit](https://github.com/GerritCodeReview/gerrit)** | [![Stars](https://img.shields.io/github/stars/GerritCodeReview/gerrit?style=social&color=white)](https://github.com/GerritCodeReview/gerrit/stargazers) | 🏛️ Formal Patch-Set Review System | Battle-tested web-based code review and Git repository management system featuring granular patch-set diffs and CI voting gates. |
+
+---
+
+## 🛠️ Best Practices & Framework Architecture
+
+To implement a bulletproof, modern automated code review and DevSecOps PR pipeline:
+
+```mermaid
+flowchart LR
+    A[👨‍💻 Pull Request Created] --> B[🔍 Fast Secret & Syntax Gates]
+    B -->|Gitleaks & Ruff| C[🛡️ Deep SAST & SCA Scan]
+    C -->|Semgrep, Trivy & OSV| D[🤖 AI Semantic Code Review]
+    D -->|Qodo PR-Agent / CodeRabbit| E{🚦 Quality & Security Passed?}
+    E -->|❌ Vulnerabilities / Blockers| F[💬 Inline PR Review Comments & Autofix]
+    E -->|✅ All Checks Pass| G[🚀 Auto-Merge Queue / Ready for Human Sign-off]
+```
+
+1. **Layer 1: Pre-Commit & In-PR Secret Scanning (0-5s)**: Run **Gitleaks** or **TruffleHog** on PR diffs to block token leaks before external triggers run.
+2. **Layer 2: Deterministic Linters & AST Checks (5-20s)**: Execute **Ruff**, **golangci-lint**, or **Super-Linter** with **Reviewdog** to pipe comments directly onto changed lines.
+3. **Layer 3: DevSecOps Vulnerability Gates (20-60s)**: Run **Semgrep** for custom AST logic and **Trivy / OSV-Scanner** for dependency CVE alerts.
+4. **Layer 4: AI Semantic PR Reviews**: Use **Qodo PR-Agent** or **CodeRabbit** to summarize architectural blast radius, test plan adequacy, and business logic flaws.
+5. **Least-Privilege Token Safety**: Configure `GITHUB_TOKEN` with minimal scopes (`contents: read`, `pull-requests: write`) and prevent execution on fork PRs without approval to defend against prompt injection.
+
+---
+
+## 🤝 How to Contribute
+
+We welcome additions, corrections, and tool suggestions from developers and security researchers!
+
+1. 🍴 **Fork** this repository.
+2. ✍️ **Add or update** your project in `README.md` following the table schema (include official links, pricing/star badges, and concise descriptions).
+3. 🧪 **Verify markdown rendering** and ensure links are functional.
+4. 📬 **Submit a Pull Request** with a brief summary of the changes.
+
+---
+
+## ⭐ Support & Share
+
+If you find this curated DevSecOps and code review resource helpful:
+
+- ⭐ **Star this repository** to improve visibility across the developer community.
+- 📢 **Share on Socials**: Post on X/Twitter, LinkedIn, and Reddit to help teams modernize their code reviews.
+- ☕ **Sponsor**: Support continuous open-source curation on [GitHub Sponsors](https://github.com/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a community-maintained curated directory intended for educational and engineering evaluation purposes.
+- Mentions of products do not constitute an endorsement.
+- Automated tools augment human reviewers; always maintain senior developer architectural and threat modeling review standards.
+
+---
+
+<div align="center">
+  <b>Built with ❤️ for Software Engineers, DevSecOps Teams, and Open-Source Maintainers.</b>
+</div>
