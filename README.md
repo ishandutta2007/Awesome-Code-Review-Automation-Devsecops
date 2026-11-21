@@ -29,7 +29,8 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Best Practices & Framework Architecture](#️-best-practices--framework-architecture)
 - [🤝 How to Contribute](#-how-to-contribute)
-- [⭐ Support & Share](#-support--share)
+- [⭐ Support & Sponsor](#-support--sponsor)
+- [📈 Star History](#-star-history)
 - [⚖️ Disclaimer](#️-disclaimer)
 
 ---
@@ -143,13 +144,26 @@ We welcome additions, corrections, and tool suggestions from developers and secu
 
 ---
 
-## ⭐ Support & Share
+## ⭐ Support & Sponsor
 
-If you find this curated DevSecOps and code review resource helpful:
+Thank you for visiting and using this resource! Maintaining a comprehensive, accurate directory of code review automation and DevSecOps tools takes significant research and testing. If you find this curated list valuable for you or your engineering team, please consider supporting the project:
 
-- ⭐ **Star this repository** to improve visibility across the developer community.
-- 📢 **Share on Socials**: Post on X/Twitter, LinkedIn, and Reddit to help teams modernize their code reviews.
-- ☕ **Sponsor**: Support continuous open-source curation on [GitHub Sponsors](https://github.com/ishandutta2007).
+- ⭐ **Star this repository** to show appreciation and help others discover it.
+- 🍴 **Fork the repo** to build your team's internal PR checklist or tool evaluation matrix.
+- 📢 **Share with your network** on X/Twitter, LinkedIn, and developer communities.
+- ☕ **Buy me a coffee / Sponsor**: Support continuous curation and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4&style=for-the-badge" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Code-Review-Automation-Devsecops&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Code-Review-Automation-Devsecops&type=date&legend=top-left)
 
 ---
 
